@@ -9,4 +9,8 @@ router.get('/', (_request, response) => {
   });
 });
 
+router.post('/', (request, response) => {
+  response.json(request.body);
+});
+
 module.exports = router;
